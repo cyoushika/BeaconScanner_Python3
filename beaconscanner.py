@@ -11,7 +11,7 @@ def callback(bt_addr, rssi, packet, additional_info):
     minor = additional_info["minor"]
     receiver = platform.uname()[1]
     timestamp = str(datetime.now())
-    with open('BeaconRecord.csv','a') as f:
+    with open('BeaconRecord_'+receiver+'.csv','a') as f:
         writer = csv.writer(f)
         writer.writerow([uuid,major,minor,rssi,receiver,timestamp])
 

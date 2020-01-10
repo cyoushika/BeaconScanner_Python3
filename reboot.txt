@@ -22,4 +22,5 @@
 # 
 # m h  dom mon dow   command
 
+#sudo crontab -e
 @reboot python3 /home/pi/Desktop/beaconscanner.py &
