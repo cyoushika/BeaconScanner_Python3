@@ -25,3 +25,5 @@ sudo pip3 install -U setuptools
 cd ..
 
 sudo pip3 install pybluez beacontools datetime
+
+rm -f Python-3.6.6.tgz

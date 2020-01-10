@@ -16,6 +16,8 @@ def callback(bt_addr, rssi, packet, additional_info):
         writer.writerow([uuid,major,minor,rssi,receiver,timestamp])
 
 
+time.sleep(5)
+
 # scan for all iBeacon advertisements from beacons with the specified uuid
 scanner = BeaconScanner(callback,
     device_filter=IBeaconFilter(uuid="00000000-b53c-1001-b000-001c4d5c1dd0")
